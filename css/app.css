@@ -301,7 +301,7 @@ figure.effect-sadie:hover p {
 /*begin contacts  page */
 
 .contact-page {
-    height: 85vh;
+    height: 85%;
     overflow: hidden;
     position: relative;
 }
@@ -317,7 +317,7 @@ figure.effect-sadie:hover p {
     position: absolute;
     background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
     background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-    height: 88vh;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -334,6 +334,10 @@ figure.effect-sadie:hover p {
         height: auto;
         overflow: hidden;
         position: relative;
+    }
+    .page-overlay {
+        background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) -10%, rgba(72, 76, 97, 0.8) 75%);
+        background: linear-gradient(to bottom, rgba(72, 76, 97, 0) -10%, rgba(72, 76, 97, 0.8) 75%);
     }
     video.video {
         display: none;
@@ -402,6 +406,10 @@ figure.effect-sadie:hover p {
     .contact-page h4.phone {
         font-size: 0.875rem;
     }
+}
+
+.contact-page h4.email {
+    margin-left: -1em;
 }
 
 .contact-page h4.email:before {
