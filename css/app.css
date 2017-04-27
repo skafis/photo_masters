@@ -166,6 +166,9 @@ if it's not present, don't show loader */
         font-size: 12px;
         margin: auto;
     }
+    #grid figure figcaption > a {
+        z-index: 10;
+    }
 }
 
 figure.effect-sadie figcaption::before {
@@ -376,12 +379,12 @@ figure.effect-sadie:hover p {
     }
 }
 
-.contact-page header {
-    font-size: 3rem;
+.contact-page .section-title h2 {
+    font-size: 2.5rem;
     text-align: center;
     color: #ffffff;
     font-weight: 700;
-    padding: 34px;
+    padding: 18px;
     position: relative;
 }
 
@@ -571,6 +574,10 @@ div.button-selector .button:hover {
         font-size: 14px;
         padding: 0.5em;
         width: 40%
+    }
+    #pricing-page .extended {
+        width: 80%;
+        padding: 0.8em;
     }
 }
 
