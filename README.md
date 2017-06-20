@@ -1,2 +1,2 @@
 # Photo_masters
-Photography site for fun
+A photography site that links freelance photographers with clients
