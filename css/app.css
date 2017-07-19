@@ -626,6 +626,23 @@ form .input-group-button {
     color: #4b8ffe;
 }
 
+.worked-for {
+    width: auto;
+    padding-top: 3%;
+}
+
+.worked-for h4 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.worked-for .slide {
+    width: auto;
+}
+
 @media only screen and (max-width: 640px) {
     .become-a-maestro {
         background-position: top;
