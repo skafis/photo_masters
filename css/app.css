@@ -294,6 +294,25 @@ figure.effect-sadie:hover p {
     padding: 0 0.4rem 0 0.8rem;
 }
 
+@media only screen and (max-width: 40em) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 1em;
+    }
+    .footer p.copywrite {
+        font-size: 14px;
+    }
+    .footer .links a {
+        padding: 2rem 0 1rem;
+    }
+    .footer .links a::after {
+        padding: 0 0.2rem 0 0.4rem;
+    }
+    .footer .links a:last-child::after {
+        padding: 0 0.2rem 0 0.4rem;
+    }
+}
+
 
 /* End footer page */
 
