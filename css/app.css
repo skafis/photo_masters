@@ -1195,12 +1195,40 @@ nav.top-nav {
 
 .top-nav ul.left {
     position: relative;
-    display: block;
-    margin-left: 5%;
+    left: 0;
+    top: 0;
 }
 
 ul.left img {
-    width: 15%;
+    width: 10%;
+}
+
+.top-nav ul.right {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    margin: 4%;
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 1em;
+    border-top: 0.3em solid #fff;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #fff;
 }
 
 
