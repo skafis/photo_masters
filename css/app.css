@@ -1208,7 +1208,7 @@ ul.left img {
     display: inline-block;
     right: 0;
     top: 0;
-    margin: 4%;
+    margin: 3% 4%;
 }
 
 .hamburger {
@@ -1229,6 +1229,55 @@ ul.left img {
     left: 0px;
     width: 100%;
     border-top: 0.2em solid #fff;
+}
+
+div.headline {
+    position: relative;
+    padding: 1.5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+div.headline h2 {
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 800;
+    color: #4b8ffe;
+}
+
+div.headline span {
+    color: white;
+    font-style: italic;
+    margin-left: -12px;
+}
+
+div.sub-headline {
+    padding: 0.5%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div.sub-headline h3 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+div.call-to-action {
+    padding: 1%;
+    margin-top: 10%;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+div.call-to-action .button: {
+    background-color: #4b8ffe;
+    color: white;
+}
+
+div.call-to-action .button:hover {
+    background-color: white;
+    color: #4b8ffe;
 }
 
 
