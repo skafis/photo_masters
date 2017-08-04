@@ -80,7 +80,39 @@ div.hero-main .headline h2 {
 div.hero-main .headline span {
     color: #c4ccce;
     font-style: italic;
+    font-weight: 500;
     margin-left: -12px;
+}
+
+div.sub-headline {
+    padding: 0.5%;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+div.sub-headline h3 {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 700;
+}
+
+div.call-to-action {
+    padding: 1%;
+    margin-top: 10%;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+div.call-to-action .button: {
+    background-color: #4b8ffe;
+    color: white;
+    border-radius: 5em;
+}
+
+div.call-to-action .button:hover {
+    background-color: white;
+    color: #4b8ffe;
 }
 
 
