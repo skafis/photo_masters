@@ -1302,6 +1302,44 @@ div.call-to-action .button:hover {
 .how-it-works {
     height: auto;
     width: auto;
+    padding: 1em;
+}
+
+.how-it-works-header {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5d85c5;
+}
+
+.steps {
+    width: 100%;
+}
+
+.steps .step-name {
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.steps .step-name::before {
+    content: "-";
+    width: 300px;
+    font-weight: 300;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+}
+
+.steps .step-name::after {
+    content: "-";
+    width: 100px;
+    font-weight: 300;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 
