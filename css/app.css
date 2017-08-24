@@ -1303,6 +1303,7 @@ div.call-to-action .button:hover {
     height: auto;
     width: auto;
     padding: 1em;
+    background-color: beige;
 }
 
 .how-it-works-header {
@@ -1321,6 +1322,7 @@ div.call-to-action .button:hover {
     font-size: 34px;
     font-weight: 800;
     text-align: center;
+    color: #5d85c5;
 }
 
 .steps .step-name::before {
@@ -1340,6 +1342,23 @@ div.call-to-action .button:hover {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.steps .step-content {
+    text-align: center;
+    margin: auto;
+}
+
+.steps .step-content img {
+    padding: 1em;
+    color: black;
+    height: 128px;
+}
+
+.steps .step-content .step-description {
+    font-size: 18px;
+    color: dimgrey;
+    padding: 2px;
 }
 
 
