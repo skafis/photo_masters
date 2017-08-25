@@ -1294,38 +1294,38 @@ div.call-to-action .button:hover {
 /*******************************************/
 
 
-/* How It works */
+/* start How It works */
 
 
 /*******************************************/
 
-.how-it-works {
+section.how-it-works {
     height: auto;
     width: auto;
-    padding: 1em;
+    padding: 2em;
     background-color: beige;
 }
 
 .how-it-works-header {
     text-align: center;
-    font-size: 34px;
+    font-size: 55px;
     font-weight: 700;
     text-transform: uppercase;
     color: #5d85c5;
 }
 
-.steps {
+div.steps {
     width: 100%;
 }
 
-.steps .step-name {
+div.steps .step-name {
     font-size: 34px;
     font-weight: 800;
     text-align: center;
     color: #5d85c5;
 }
 
-.steps .step-name::before {
+div.steps .step-name::before {
     content: "-";
     width: 300px;
     font-weight: 300;
@@ -1335,7 +1335,7 @@ div.call-to-action .button:hover {
     position: relative;
 }
 
-.steps .step-name::after {
+div.steps .step-name::after {
     content: "-";
     width: 100px;
     font-weight: 300;
@@ -1344,18 +1344,18 @@ div.call-to-action .button:hover {
     margin: auto;
 }
 
-.steps .step-content {
+div.steps .step-content {
     text-align: center;
     margin: auto;
 }
 
-.steps .step-content img {
+div.steps .step-content img {
     padding: 1em;
     color: black;
     height: 128px;
 }
 
-.steps .step-content .step-description {
+div.steps .step-content .step-description {
     font-size: 18px;
     color: dimgrey;
     padding: 2px;
@@ -1366,6 +1366,84 @@ div.call-to-action .button:hover {
 
 
 /* end how it works  */
+
+
+/*******************************************/
+
+
+/*******************************************/
+
+
+/* start benefits section  */
+
+
+/*******************************************/
+
+section.benefits {
+    height: auto;
+    width: auto;
+    padding: 2em;
+}
+
+section.benefits .callout {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+}
+
+div.benefits-headings {
+    text-align: center;
+    line-height: 1.6;
+    padding: 5px;
+    padding: 0.3em;
+}
+
+div.benefits-headings .benefits-title {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #5d85c5;
+}
+
+div.benefits-headings .benefits-subtitle {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+h4.benefit-lead {
+    font-size: 29px;
+    text-overflow: clip;
+    letter-spacing: 0.3px;
+    color: #5d85c5;
+    text-transform: capitalize;
+}
+
+h4.benefit-lead::after {
+    content: "";
+    height: 3px;
+    background: #000;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+div.benefit-description {
+    font-size: 21px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: lowercase;
+    padding: 5px;
+}
+
+
+/*******************************************/
+
+
+/* end benefits section  */
 
 
 /*******************************************/
