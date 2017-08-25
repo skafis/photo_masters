@@ -1387,7 +1387,7 @@ section.benefits {
 
 section.benefits .callout {
     width: 100%;
-    height: 220px;
+    height: auto;
     text-align: center;
 }
 
@@ -1424,7 +1424,8 @@ h4.benefit-lead::after {
     content: "";
     height: 3px;
     background: #000;
-    width: 80px;
+    width: 90px;
+    padding-top: 3px;
     position: absolute;
     left: 0;
     right: 0;
@@ -1437,7 +1438,7 @@ div.benefit-description {
     text-align: justify;
     letter-spacing: .5px;
     text-transform: lowercase;
-    padding: 5px;
+    padding: 3px;
     color: dimgray;
 }
 
@@ -1479,9 +1480,6 @@ div.media-headers h2 {
     text-transform: uppercase;
     color: #5d85c5;
 }
-
-
-/*****************/
 
 .featured-testimonials-section {
     background-color: beige;
@@ -1547,6 +1545,11 @@ div.media-headers h2 {
     .featured-testimonials-section .featured-testimonials-quotation {
         margin-left: 0;
     }
+}
+
+.marketing-site-three-up {
+    text-align: center;
+    padding: 2rem 0;
 }
 
 
