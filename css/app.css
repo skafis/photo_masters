@@ -1417,9 +1417,13 @@ div.steps .step-content img {
 }
 
 div.steps .step-content .step-description {
-    font-size: 18px;
-    color: dimgrey;
-    padding: 2px;
+    font-size: 21px;
+    padding: 3px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: lowercase;
+    color: dimgray;
 }
 
 
