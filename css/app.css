@@ -1376,8 +1376,8 @@ div.call-to-action .button:hover {
         height: 70%;
     }
     ul.left img {
-        height: 10%;
-        width 30%;
+        width: 25%;
+        margin-top: -5%;
     }
     .top-nav ul.right .responsive-button {
         font-size: 13px;
