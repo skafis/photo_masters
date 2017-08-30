@@ -1528,7 +1528,7 @@ section.benefits {
 
 section.benefits .callout {
     width: 100%;
-    height: auto;
+    height: 300px;
     text-align: center;
 }
 
@@ -1584,6 +1584,9 @@ div.benefit-description {
 }
 
 @media only screen and (max-width: 40em) {
+    section.benefits .callout {
+        height: auto;
+    }
     div.benefits-headings .benefits-title {
         font-size: 30px;
     }
@@ -1708,7 +1711,7 @@ div.media-headers h2 {
 /*******************************************/
 
 
-/* end media mublications */
+/* end media pulications */
 
 
 /*******************************************/
