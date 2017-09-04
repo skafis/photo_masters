@@ -1715,3 +1715,65 @@ div.media-headers h2 {
 
 
 /*******************************************/
+
+
+/*******************************************/
+
+
+/* start Terms & conditions */
+
+
+/*******************************************/
+
+section.terms-and-condition {
+    width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: beige;
+}
+
+section.terms-and-condition h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: 800;
+    padding: .3em;
+    color: #4b8ffe;
+}
+
+section.terms-and-condition h5 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+section.terms-and-condition .terms-content {
+    font-size: 1.1em;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    word-spacing: 0.2em;
+    color: dimgray;
+    padding: 0.3em 0.5em;
+}
+
+h4.terms-header {
+    font-weight: 700;
+    font-size: 21px;
+    font-family: serif;
+    color: #4b8ffe;
+    text-transform: capitalize;
+}
+
+section.terms-and-condition .terms-content a {
+    color: #4b8ffe;
+    font-size: 1.12em;
+}
+
+
+/*******************************************/
+
+
+/* end Terms & conditionss */
+
+
+/*******************************************/
