@@ -1735,7 +1735,7 @@ section.terms-and-condition {
 section.terms-and-condition h2 {
     text-align: center;
     text-transform: capitalize;
-    font-size: 55px;
+    font-size: 3em;
     font-weight: 800;
     padding: .3em;
     color: #4b8ffe;
@@ -1767,6 +1767,13 @@ h4.terms-header {
 section.terms-and-condition .terms-content a {
     color: #4b8ffe;
     font-size: 1.12em;
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.terms-and-condition h2 {
+        font-size: 2em;
+        padding: .15em;
+    }
 }
 
 
