@@ -722,8 +722,8 @@ form .input-group-button {
     padding: 0;
 }
 
-.categories .columns {
-    padding: 13px;
+.categories .row {
+    padding-bottom: 21px;
 }
 
 .categories .image-wrapper {

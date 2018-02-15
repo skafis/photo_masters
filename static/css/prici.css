@@ -231,7 +231,7 @@ Main Components
 .cd-pricing-header {
     position: relative;
     z-index: 1;
-    height: 90px;
+    height: 80px;
     padding: 1em;
     pointer-events: none;
     background-color: #3aa0d1;
@@ -252,7 +252,7 @@ hr.separator {
 
 .cd-description {
     position: relative;
-    padding: .3em;
+    padding: .5em;
     font-size: 1.3rem;
     color: black;
     font-weight: 100;
@@ -273,6 +273,7 @@ hr.separator {
 
 @media only screen and (min-width: 768px) {
     .cd-pricing-header {
+        height: auto;
         padding: 1.9em 0.9em 1.6em;
         pointer-events: auto;
         text-align: center;

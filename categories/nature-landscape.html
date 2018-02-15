@@ -60,21 +60,22 @@
     </nav>
     <section class="main-container">
         <div class="row wide">
-            <script type="text/javascript" src="//photemy.checkfront.com/lib/interface--31.js"></script>
+            <script type="text/javascript" src="//photomaster.checkfront.com/lib/interface--31.js"></script>
             <!-- CHECKFRONT BOOKING PLUGIN v23-->
             <div id="CHECKFRONT_WIDGET_01">
-                <p id="CHECKFRONT_LOADER" style="background: url('//photemy.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p>
+                <p id="CHECKFRONT_LOADER" style="background: url('//photomaster.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p>
             </div>
             <script>
                 new DROPLET.Widget({
-                    host: 'photemy.checkfront.com'
+                    host: 'photomaster.checkfront.com'
+                    , pipe: 'photomasters.co/checkfront-helper.html'
                     , target: 'CHECKFRONT_WIDGET_01'
-                    , category_id: '8'
-                    , style: 'background-color: fff'
+                    , category_id: '5'
+                    , options: 'tabs'
                     , provider: 'droplet'
                 }).render();
             </script>
-            <noscript><a href="https://photemy.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
+            <noscript><a href="https://photomaster.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
         </div>
     </section>
     <section class="footer">

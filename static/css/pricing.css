@@ -1,0 +1,292 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*,
+*::after,
+*::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+.cd-header {
+    position: relative;
+}
+
+.cd-header h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-header {
+        line-height: 280px;
+    }
+    .cd-header h1 {
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
+}
+
+.cd-pricing-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-container {
+        margin: 0 auto;
+    }
+    .cd-pricing-container.cd-full-width {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.cd-pricing-list {
+    margin: 2em 0 0;
+}
+
+.cd-pricing-list > li {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-list {
+        margin: 3em 0 0;
+    }
+    .cd-pricing-list:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .cd-pricing-list > li {
+        width: 33.3333333333%;
+        float: left;
+    }
+    .cd-has-margins .cd-pricing-list > li {
+        width: 32.3333333333%;
+        float: left;
+        margin-right: 1.5%;
+    }
+    .cd-has-margins .cd-pricing-list > li:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.cd-pricing-wrapper {
+    /* this is the item that rotates */
+    position: relative;
+}
+
+.cd-pricing-wrapper > li {
+    background-color: #FFFFFF;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* Firefox bug - 3D CSS transform, jagged edges */
+    outline: 1px solid transparent;
+}
+
+.cd-pricing-wrapper > li::after {
+    /* subtle gradient layer on the right - to indicate it's possible to scroll */
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    pointer-events: none;
+    background: -webkit-linear-gradient( right, #FFFFFF, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
+}
+
+.cd-pricing-wrapper .is-visible {
+    /* the front item, visible by default */
+    position: relative;
+    z-index: 5;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-wrapper > li::before {
+        /* separator between pricing tables - visible when number of tables > 3 */
+        content: '';
+        position: absolute;
+        z-index: 6;
+        left: -1px;
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        height: 50%;
+        width: 1px;
+    }
+    .cd-pricing-wrapper > li::after {
+        /* hide gradient layer */
+        display: none;
+    }
+    .cd-has-margins .cd-pricing-wrapper > li,
+    .cd-has-margins .cd-popular .cd-pricing-wrapper > li {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .cd-secondary-theme .cd-pricing-wrapper > li {
+        background: #3aa0d1;
+        background: -webkit-linear-gradient( bottom, #3aa0d1, #3ad2d1);
+        background: linear-gradient(to top, #3aa0d1, #3ad2d1);
+    }
+    .cd-secondary-theme .cd-popular .cd-pricing-wrapper > li {
+        background: #e97d68;
+        background: -webkit-linear-gradient( bottom, #e97d68, #e99b68);
+        background: linear-gradient(to top, #e97d68, #e99b68);
+        box-shadow: none;
+    }
+    :nth-of-type(1) > .cd-pricing-wrapper > li::before {
+        /* hide table separator for the first table */
+        display: none;
+    }
+    .cd-has-margins .cd-pricing-wrapper > li {
+        border-radius: 4px 4px 6px 6px;
+    }
+    .cd-has-margins .cd-pricing-wrapper > li::before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .cd-full-width .cd-pricing-wrapper > li {
+        padding: 2.5em 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-popular .cd-pricing-wrapper > li::before {
+        /* hide table separator for .cd-popular table */
+        display: none;
+    }
+    .cd-popular + li .cd-pricing-wrapper > li::before {
+        /* hide table separator for tables following .cd-popular table */
+        display: none;
+    }
+}
+
+.cd-pricing-header {
+    position: relative;
+    z-index: 1;
+    padding: 0.1em;
+    pointer-events: none;
+    color: #FFFFFF;
+}
+
+.cd-pricing-header h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-header {
+        pointer-events: auto;
+        text-align: center;
+        color: #173d50;
+        background-color: transparent;
+    }
+    .cd-popular .cd-pricing-header {
+        color: #e97d68;
+        background-color: transparent;
+    }
+    .cd-secondary-theme .cd-pricing-header {
+        color: #FFFFFF;
+    }
+    .cd-pricing-header h2 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+.cd-pricing-body {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-body {
+        overflow-x: visible;
+    }
+}
+
+.cd-pricing-features {
+    width: 600px;
+}
+
+.cd-pricing-features:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-pricing-features li {
+    width: 100px;
+    float: left;
+    font-size: 1.4rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pricing-features {
+        width: auto;
+    }
+    .cd-pricing-features li {
+        float: none;
+        width: auto;
+        padding: 1em;
+    }
+    .cd-popular .cd-pricing-features li {
+        margin: 0 3px;
+    }
+    .cd-pricing-features li:nth-of-type(2n+1) {
+        background-color: rgba(23, 61, 80, 0.06);
+    }
+    .cd-pricing-features em {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .cd-has-margins .cd-popular .cd-pricing-features li,
+    .cd-secondary-theme .cd-popular .cd-pricing-features li {
+        margin: 0;
+    }
+    .cd-secondary-theme .cd-pricing-features li {
+        color: #FFFFFF;
+    }
+    .cd-secondary-theme .cd-pricing-features li:nth-of-type(2n+1) {
+        background-color: transparent;
+    }
+}
